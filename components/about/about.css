@@ -1,0 +1,273 @@
+/* General Styles */
+.about-container {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Background Section */
+.about-background {
+  position: relative; /* Keeps overlay positioning relative to this container */
+  background: url('/img/prac1.webp') no-repeat center/cover;
+  background-attachment: fixed; /* This makes the background fixed */
+  background-position: center center; /* Ensures the background is centered */
+  z-index: 1; /* Ensure the text is in front */
+  padding: 4rem 2rem;
+  color: white;
+}
+.about-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(228, 64, 25, 0.4), rgba(228, 64, 25, 0.4), rgba(230, 103, 26, 0.4));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+  z-index: 0; /* Set the overlay to be behind the text */
+}
+.about-content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.about-columns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.about-image {
+  width: 30%;
+}
+.about-text {
+  width: 60%;
+}
+.about-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Cardo", serif;
+}
+.second-about{
+  background-color: black;
+}
+/* Grid Section */
+.about-grid {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.grid-item {
+  overflow: hidden;
+}
+
+.grid-item-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.grid-item-image {
+  width: 20%;
+}
+.grid-item-image img {
+  width: 100%;
+  margin-right: 1em;
+}
+
+.grid-item-text h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Cardo", serif;
+  font-weight: 500;
+}
+
+.grid-item-text p {
+  margin: 0;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Cardo", serif;
+}
+
+
+.about-call {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5em;
+}
+.about-call div {
+  width: 30%;
+  border: 0.5px solid #333;
+}
+.about-call i {
+  padding: 0 1em;
+  font-size: 2rem;
+  color: #df4a38;
+}
+.about-footer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.about-footer .leftabout,
+.about-footer .rightabout {
+  width:70%;
+  padding: 2em;
+  border-radius: 20px;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.leftabout .overlay,.rightabout .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(228, 64, 25, 0.7), rgba(228, 64, 25, 0.7), rgba(230, 103, 26, 0.7));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+}
+.leftabout {
+  background: url('/img/policy.png') no-repeat center/cover;
+margin-bottom: 2em;
+}
+.rightabout {
+  background: url('/img/prac3.webp') no-repeat center/cover;
+
+}
+.about-footer .leftabout h2,
+.about-footer .rightabout h2 {
+  color: #fff;
+  font-family: "Cardo", serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.thirdabout{
+  width: 90%;
+  display: flex;
+  padding: 4em 0;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: start;
+}
+.about-form{
+  width: 60%;
+  margin: 0 auto;
+  
+}
+.about-form h1{
+  text-align: center;
+  font-family: "Cardo", serif;
+
+  font-size: 2.5rem;
+  color: #df4a38;
+  font: bold;
+}
+.about-form form{
+  padding: 1em;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.about-form form input,.about-form form textarea{
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+  padding: .5em 1em;
+}
+.about-form button{
+  width: 100%;
+  display: inline-block;
+  background: url('/img/bg.png') no-repeat center/cover;
+
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-columns {
+    flex-direction: column;
+  }
+  .about-image {
+    width: 100%;
+  }
+  .about-text {
+    width: 90%;
+    margin: 2em auto;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .grid-item {
+    margin-bottom: 2em;
+  }
+  .grid-item-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .grid-item-image {
+    margin: 0 auto;
+  }
+  .second-about h1,
+  .second-about p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about-footer {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .about-footer .leftabout,
+  .about-footer .rightabout {
+    width: 100%;
+  }
+  .about-form{
+    width: 100%;
+  }
+  .about-form form{
+    width: 90%;
+  }
+  .thirdabout{
+    flex-direction: column;
+  }
+  .about-footer{
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}

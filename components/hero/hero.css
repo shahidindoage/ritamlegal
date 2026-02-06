@@ -1,0 +1,268 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  position: relative;
+}
+.desktop-image{
+  z-index: 1;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 10;
+}
+.left-column{
+  width: 50%;
+  flex: 1;
+padding-top:2em ;
+}
+.left-column h2{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: white;
+}
+.left-column,
+.right-column {
+  display: flex;
+  align-items: center;
+  background: url('/img/bg.png') no-repeat center/cover;
+
+  z-index: 10;
+}
+.right-column {
+  width: 50%;
+
+  background: none;
+  background-color: #282828;
+  position: relative;
+  align-items: start;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  z-index: 1;
+}
+
+.left-image {
+  width: 50%;
+  height: 100px;
+}
+
+.text-container {
+  color: white;
+  border-radius: 8px;
+  z-index: 10;
+  font-family: "Cardo", serif;
+width: 95%;
+margin: 0 auto;
+padding: 1.5em;
+}
+.left-column .text-container {
+  color: #fff;
+}
+
+
+.text-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: white;
+  padding: 1em 0 2em 0;
+}
+
+.hero-section-two {
+  /*   background: url('/img/bg.png') no-repeat center/cover;
+; */
+  /* background: url('/img/bg.png') no-repeat center/cover; */
+  background-color: black;
+
+  padding: 2em 0;
+}
+
+.hero-section-two-header {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.hero-section-two-header h2 {
+  margin-top: 1em;
+  font-size: 2rem;
+  font-family: "Cardo", serif;
+  color: #fff;
+
+}
+.h2-border {
+  width: 50px;
+  border: 2px solid white;
+  margin: 0 auto;
+  margin-top: 1em;
+  border-radius: 5px;
+}
+.hero-section-two-footer {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: flex-start; */
+  align-items: center;
+  margin-top: 2em;
+}
+.hero-two-row1{
+  width: 55%;
+}
+.hero-two-row1 img{
+  width: 80%;
+  margin: 0 auto;
+}
+/* .hero-two-row1 h1{
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Cardo", serif;
+
+} */
+.hero-two-row1, .hero-two-row2 {
+  will-change: transform, opacity;
+}
+
+.hero-two-row2{
+width: 92%;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.hero-content {
+  width: 47%;
+  padding: 1.5em;
+  margin-bottom: 3em;
+ 
+}
+.hero-content h3 {
+  font-size: 1.3rem;
+  font-family: "Cardo", serif;
+  margin-bottom: 0.5em;
+  color: white;
+
+}
+.hero-content p {
+  font-size: 1.1rem;
+  font-family: "Cardo", serif;
+  color: white;
+
+
+  
+}
+.mobile-image{
+  display: none;
+}
+
+.hero-animated-block {
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  right: 3em;
+  transform: translateY(-95%); /* Centers the element vertically */
+  z-index: 10;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.hero-animated-block span {
+  display: inline;
+  line-height: 1.7;
+}
+
+.hero-animated-block span:lang(sa) {
+  color: #e0503f;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Highlight specific Hindi/Sanskrit words - use .sanskrit-highlight class in JSX */
+.hero-animated-block .sanskrit-highlight {
+  color: #e0503f;
+  font-weight: 600;
+  font-style: italic;
+}
+/* For Mobile */
+@media screen and (max-width: 768px) {
+.desktop-image{
+  display: none;
+}
+.hero-animated-block{
+  position: relative;
+  width: 100%;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  transform: none;
+}
+  .hero {
+    height: auto;
+  }
+  .mobile-image{
+    display: block;
+  }
+  .hero-container {
+    height: 90vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+  .left-column {
+    flex-direction: column;
+  }
+  .left-image {
+    height: auto;
+    margin-top: 1em;
+  }
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .sub-title {
+    font-size: 3rem;
+  }
+  .hero-section-two-footer {
+    flex-direction: column;
+  }
+ 
+  .hero-content {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+ .hero-two-row1,.hero-two-row2{
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+ }
+}

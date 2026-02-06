@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cdn-cgi/  # Blocking Cloudflare-related files
+Allow: /
+Sitemap: https://ritamlegal.com/sitemap.xml

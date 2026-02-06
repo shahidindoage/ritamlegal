@@ -1,0 +1,106 @@
+.partner-managing-container {
+    position: relative;
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+  }
+  .partner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* 30% white overlay */
+    z-index: 1;
+  }
+  .partner-managing-contentWrapper{
+    display: flex;
+    max-width: 95%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 10;
+    padding: 2em 0;
+  }
+  
+  .partner-managing-leftColumn {
+    flex: 1;
+    padding: 2em;
+    text-align: justify;
+    color: white; /* Ensuring readability on transparent background */
+  }
+  
+  
+  .partner-managing-rightColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    
+  }
+  
+  .partner-managing-image {
+    border-radius: 10px;
+    height: 450px;
+  }
+  
+  .partner-managing-leftColumn h1{
+    text-align: center;
+    font-family: "Cardo", serif;
+  
+    font-size: 2.5rem;
+    color: #df4a38;
+    font: bold;
+  }
+  .partner-managing-leftColumn h2 {
+    text-align: center;
+    color: #333;
+    font: bold;
+    font-size: 1.5rem;
+    font-family: "Cardo", serif;
+    margin-bottom: 1em;
+
+  }
+  .partner-managing-leftColumn h3 {
+    text-align: center;
+    color: #df4a38;
+    font: bold;
+    font-size: 1.2rem;
+    font-family: "Cardo", serif;
+    margin-bottom: 0.5em;
+  }
+  .partner-managing-leftColumn p {
+    text-align: justify;
+    font-size:1.1rem;
+    color: #333;
+    margin-bottom: 1em;
+    line-height: 1.5rem;
+  }
+  
+  @media (max-width: 763px) {
+    .partner-managing-contentWrapper{
+      flex-direction: column-reverse;
+    }
+   
+    .partner-managing-image{
+      height: auto;
+    }
+    .partner-managing-leftColumn{
+      padding-top: 0;
+    }
+    .partner-managing-leftColumn h1 {
+      font-size: 1.5rem;
+    }
+    .partner-managing-leftColumn h2{
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    padding-bottom: .75em;
+
+    }
+  
+  }
+  

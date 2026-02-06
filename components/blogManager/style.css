@@ -1,0 +1,10 @@
+table, td, th{
+    border: none !important;
+    color: grey;
+}
+thead tr{
+    border-collapse: separate; /* Separate borders for rounded corners */
+    border-spacing: 0; /* Remove default spacing */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

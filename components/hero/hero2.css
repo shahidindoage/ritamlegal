@@ -1,0 +1,278 @@
+/* Hero Section */
+.hero2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .hero2  .desktop-image{
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+  
+  
+  .hero2 .columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+  }
+  .hero2 .left-column{
+    width: 50%;
+    flex: 1;
+  padding-top:2em ;
+  }
+  .hero2 .left-column h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: white;
+  }
+  .hero2 .left-column {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Keeps overlay positioning relative to this container */
+    background: url('/img/prac1.webp') no-repeat center/cover;
+    background-attachment: fixed; /* This makes the background fixed */
+    background-position: center center; /* Ensures the background is centered */
+    z-index: 1; /* Ensure the text is in front */
+  }
+  
+  
+  .hero2 .left-column .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(228, 64, 25, 0.4), rgba(228, 64, 25, 0.4), rgba(230, 103, 26, 0.4));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 0; /* Set the overlay to be behind the text */
+  }
+ 
+ 
+  
+  .hero2 .left-image {
+    width: 50%;
+    height: 100px;
+  }
+  
+  .hero2 .text-container {
+    color: white;
+    border-radius: 8px;
+    z-index: 10;
+    font-family: "Cardo", serif;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1em;
+  position: relative; /* Ensure text is above overlay */
+
+  }
+  .hero2 .left-column .text-container {
+    color: #fff;
+  }
+  
+  
+  .hero2 .text-container p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: white;
+    padding: 2em 3em 2em 3em;
+  }
+ .hero-section-two2 {
+    /*   background: url('/img/bg.png') no-repeat center/cover;
+  ; */
+    /* background: url('/img/bg.png') no-repeat center/cover; */
+    background-color: black;
+  
+    padding: 2em 0;
+  }
+  
+  .hero-section-two2 .hero-section-two-header {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .hero-section-two2 .hero-section-two-header h2 {
+    margin-top: 1em;
+    font-size: 2rem;
+    font-family: "Cardo", serif;
+    color: #fff;
+  
+  }
+.h2-border {
+    width: 50px;
+    border: 2px solid white;
+    margin: 0 auto;
+    margin-top: 1em;
+    border-radius: 5px;
+  }
+  .hero-section-two2 .hero-section-two-footer {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: flex-start; */
+    align-items: center;
+    margin-top: 2em;
+  }
+  .hero-section-two2 .hero-two-row1{
+    width: 55%;
+  }
+  .hero-section-two2 .hero-two-row1 img{
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* .hero-two-row1 h1{
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Cardo", serif;
+  
+  } */
+  .hero-section-two2 .hero-two-row1, .hero-two-row2 {
+    will-change: transform, opacity;
+  }
+  
+  .hero-section-two2 .hero-two-row2{
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+  .hero-section-two2 .hero-content {
+    width: 47%;
+    padding: 1.5em;
+    margin-bottom: 3em;
+   
+  }
+  .hero-section-two2 .hero-content h3 {
+    font-size: 1.3rem;
+    font-family: "Cardo", serif;
+    margin-bottom: 0.5em;
+    color: white;
+  
+  }
+  .hero-section-two2 .hero-content p {
+    font-size: 1.1rem;
+    font-family: "Cardo", serif;
+    color: white;
+  
+  
+    
+  }
+  .hero2 .mobile-image{
+    display: none;
+  }
+  
+  .hero2 .hero-animated-block {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    right: 3em;
+    transform: translateY(-95%); /* Centers the element vertically */
+    z-index: 10;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+  }
+  
+  .hero2 .hero-animated-block span {
+    display: inline;
+    line-height: 1.7;
+  }
+  
+  .hero2  .hero-animated-block span:lang(sa) {
+    color: #e0503f;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  /* Highlight specific Hindi/Sanskrit words - use .sanskrit-highlight class in JSX */
+  .hero2 .hero-animated-block .sanskrit-highlight {
+    color: #e0503f;
+    font-weight: 600;
+    font-style: italic;
+  }
+  /* For Mobile */
+  @media screen and (max-width: 768px) {
+    .hero2 .desktop-image{
+    display: none;
+  }
+  .hero2 .hero-animated-block{
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    transform: none;
+  }
+    .hero2 {
+      height: auto;
+    }
+    .hero2 .mobile-image{
+      display: none;
+    }
+    .hero2 .hero-container {
+      height: 90vh;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+    .hero2 .columns {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero2 .left-column,
+    .hero2  .right-column {
+      width: 100%;
+    }
+    .hero2 .left-column {
+      flex-direction: column;
+    }
+    .hero2 .left-image {
+      height: auto;
+      margin-top: 1em;
+    }
+    .hero2 .main-title {
+      font-size: 3rem;
+    }
+  
+    .hero2 .sub-title {
+      font-size: 3rem;
+    }
+    .hero-section-two2 .hero-section-two-footer {
+      flex-direction: column;
+    }
+   
+    .hero-section-two2 .hero-content {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+    .hero-section-two2 .hero-two-row1,.hero-two-row2{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+   }
+   .hero2 .text-container p{
+    font-size: 1rem;
+    padding: 2em;
+   }
+  }
+  

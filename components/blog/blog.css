@@ -1,0 +1,201 @@
+/* Container and layout styles */
+.blog-list-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5em;
+  background-color: #fff;
+}
+
+.blog-list-container .header-section div {
+  border-bottom: 3px solid #df4a38;
+  width: 10%;
+  margin: 0.5em auto;
+}
+
+.blog-list-container .header-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  font-family: "Cardo", serif;
+  font-weight: 500;
+}
+
+/* Blog content layout */
+.blog-list-content {
+  width: 90%;
+  margin: 3em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 0;
+}
+
+/* First column */
+.blog-list-column:first-child {
+  width: 60%;
+}
+
+.featured-blog {
+  width: 100%;
+display: block;
+}
+
+/* Parallax styling */
+.small-blog-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 15px; /* Add space for caption */
+}
+
+.small-blog-image {
+  height: 250px;
+}
+
+
+
+
+.image-caption {
+  font-size: .7rem;
+  text-align: center;
+  width: 100%;
+  color: #555;
+  border-radius: 0 0 8px 8px;
+  position: relative;
+  z-index: 10; /* Ensure caption is above other elements */
+}
+
+/* Featured blog text styles */
+.featured-blog-text {
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+ 
+}
+
+.featured-blog-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #df4a38;
+  font-family: "Cardo", serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.featured-blog-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Second column */
+.blog-list-column.small-blogs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.small-blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-blog-text {
+  margin-top: 10px;
+}
+
+.small-blog-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #df4a38;
+  font-family: "Cardo", serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.small-blog-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.blog-list-column-other-blogs {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+
+.blog-list-column-other-blogs .small-blog {
+  width: 31%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .blog-list-container .header-section div {
+    width: 30%;
+  }
+  
+  .blog-list-column-other-blogs {
+    margin-top: 0;
+  }
+  
+  .blog-list-column-other-blogs .small-blog {
+    width: 100%;
+  }
+  
+  .featured-blog-title {
+    font-size: 1.5rem;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+  
+  .featured-blog-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .blog-list-content {
+    flex-direction: column;
+  }
+  
+  .featured-blog-image,
+  .small-blog-image {
+    height: 250px;
+  }
+  
+  .blog-list-column:first-child {
+    width: 100%;
+  }
+  
+  .blog-list-column:first-child,
+  .blog-list-column.small-blogs {
+    flex: 1;
+  }
+  
+  .featured-blog,
+  .small-blog {
+    margin-bottom: 1em;
+  }
+    .parallax-wrapper {
+      transform: none !important; /* Disable parallax effect on mobile */
+    }
+    
+    .expanded-image {
+      /* Mobile-specific image styling */
+      max-width: 100%;
+      height: auto;
+    }
+  
+    /* Optional: Adjust image size for mobile */
+    .parallax-image {
+      object-fit: cover;
+    }
+  
+}

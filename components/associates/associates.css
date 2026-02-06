@@ -1,0 +1,66 @@
+.associates-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.associates-page-container .header-section div {
+  border-bottom: 3px solid #df4a38;
+  width: 30%;
+  margin: 0.5em auto;
+}
+
+.associates-page-container .header-title {
+  font-size: 2rem;
+  color: #333;
+  font-family: "Cardo", serif;
+  font-weight: 500;
+}
+.associates-page-container .cards-row{
+ width: 90%;
+ margin: 2em auto;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+}
+.associates-page-container .card-details{
+width: 25%;
+height: 400px;
+position: relative;
+border-radius: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+.detail-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #fff;
+  width: 90%;
+  padding: .75em .75em .25em .75em;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+
+.detail-box p{
+  color: #df4a38;
+}
+.detail-box i{
+  color: #df4a38;
+  font-size: 1.5rem;
+}
+@media (max-width: 763px) {
+.associates-page-container .cards-row{
+ flex-direction: column;
+}
+.associates-page-container .card-details{
+width: 100%;
+margin-bottom: 2em;
+}
+}

@@ -1,0 +1,60 @@
+.blog-cards-container {
+  padding: 2em 0;
+  width: 80%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.blog-card {
+  width: 300px;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+}
+
+.blog-card-image {
+  width: 100%;
+  height: 200px;
+}
+
+.blog-card-content {
+  padding: 0.5em;
+}
+
+.blog-card-title {
+  font-size: 1.2rem;
+  color: #333;
+  font-family: "Cardo", serif;
+  white-space: nowrap;        /* Prevents text from wrapping */
+  overflow: hidden;          /* Hides the overflowed text */
+  text-overflow: ellipsis;   /* Adds ellipsis (...) when text is truncated */
+}
+
+
+.blog-card-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  font-family: "Cardo", serif;
+  display: -webkit-box;            /* Creates a flexible box for the text */
+  -webkit-line-clamp: 2;           /* Limits the text to 2 lines */
+  -webkit-box-orient: vertical;    /* Ensures vertical orientation */
+  overflow: hidden;                /* Hides any overflowed text */
+  text-overflow: ellipsis;         /* Adds ellipsis (...) when text is truncated */
+}
+
+
+@media (max-width: 763px) {
+  .blog-card {
+    margin-bottom: 2em;
+  }
+}

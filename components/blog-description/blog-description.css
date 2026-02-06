@@ -1,0 +1,119 @@
+.blog-description-container {
+  background-color: #fff;
+  width: 100%;
+  padding: 2em 0;
+}
+.blog-description-header {
+  width: 95%;
+  position: relative;
+  margin: 0 auto;
+  height: 200px;
+  background-size: cover; /* Ensures the image is resized to fit the container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Optional: centers the image within the container */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 30% white overlay */
+  z-index: 1;
+  border-radius: 10px;
+}
+.blog-description-header h1 {
+  color: #fff;
+  z-index: 10;
+  font-family: "Cardo", serif;
+  font-size: 2.25rem;
+  padding: 0 1em;
+  font-weight: 500;
+}
+.blog-description-content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+.content-date {
+  text-align: right;
+  color: #df4a38;
+  font-size: 1.1rem;
+  font-family: "Cardo", serif;
+  padding-bottom: 0.5em;
+}
+.content-author {
+  text-align: left;
+  color: #333;
+  font-size: 1.1rem;
+  font-family: "Cardo", serif;
+}
+.content-author strong {
+  color: #df4a38 !important;
+}
+.content-data p,
+.content-data blockquote,
+.content-data ul li {
+  text-align: justify;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.75em;
+  margin-bottom: .75em;
+}
+.content-data ul li ,.content-data ol li {
+  margin-bottom: 1em;
+  /* padding-left: 2em; */
+}
+.content-data strong {
+  font-weight: 600;
+}
+.content-data a {
+  color: blue;
+}
+.content-data h2,
+.content-data h3 {
+  color: #333;
+  font-family: "Cardo", serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0.5em 0;
+}
+.content-data img {
+  padding-bottom: 0.5em;
+}
+.blog-description-last-container {
+  padding: 2em 0;
+  background-color: #fff;
+}
+.blog-description-last-container .header-section div {
+  border-bottom: 3px solid #df4a38;
+  width: 5%;
+  margin: 0.5em auto;
+}
+
+.blog-description-last-container .header-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  font-family: "Cardo", serif;
+  font-weight: 500;
+}
+.image-caption{
+  font-size: .7rem;
+  text-align: center;
+  width: 100%;
+  margin-top: .25em;
+  color: #555;
+}
+@media (max-width: 763px) {
+  .blog-description-content {
+    width: 90%;
+  }
+  .blog-description-header h1{
+    font-size: 1.25rem;
+  }
+}

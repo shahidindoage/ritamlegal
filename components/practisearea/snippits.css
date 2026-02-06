@@ -1,0 +1,93 @@
+.snippits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns items to the left by default */
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  
+  .snippits-container .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    flex: 1 1 calc(30% - 20px); /* Ensures 4 items per row with gap */
+    box-sizing: border-box;
+  }
+  
+  .snippits-container .card:nth-child(4n) {
+    margin-right: 0; /* Ensures no margin on the right of the last item in each row */
+  }
+  
+  .snippits-container .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .snippits-container .card-link {
+    text-decoration: none;
+  }
+  
+  .snippits-container .card-image {
+    width: 100%;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .snippits-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(228, 64, 25, 0.7), rgba(228, 64, 25, 0.7), rgba(230, 103, 26, 0.7));
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .snippits-container .card:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .snippits-container .card-title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: "Cardo", serif;
+  
+    font-weight: normal;
+    text-align: center;
+    z-index: 1;
+    transition: font-weight 0.3s ease-in-out;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  .snippits-container .card:hover .card-title {
+    font-weight: bold;
+  }
+  
+  /* Center the last card if there are fewer than 4 items in the last row */
+  .snippits-container .grid-container:last-child {
+    justify-content: center; /* Centers items in the last row */
+  }
+  
+  @media (max-width: 768px) {
+    .snippits-container .card {
+      flex: 1 1 100%; /* Cards take full width on small screens */
+    }
+  
+    .snippits-container .grid-container {
+      justify-content: center; /* Center cards horizontally on small screens */
+    }
+  }
+  

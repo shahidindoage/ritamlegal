@@ -1,0 +1,135 @@
+/* styles/CommentAndLike.module.css */
+.blog-comment-like-container {
+  width: 100%;
+}
+
+.like-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.like-button {
+    background: url('/img/bg.png') no-repeat center/cover;
+;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+}
+
+.like-button:disabled {
+  background-color: #fff;
+  color: #df4a38;
+  border: 1px solid #df4a38;
+}
+
+.like-count {
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #df4a38;
+}
+
+.comment-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  margin-top: 30px;
+}
+.comment-form-container {
+  width: 50%;
+}
+.comments-list-container {
+  width: 45%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.comment-section h3 {
+  font-size: 1.5rem;
+  color: #333;
+  font-family: "Cardo", serif;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.comments-list p {
+  color: #333;
+}
+
+.comment-name,
+.comment-text {
+  width: 100%;
+  margin-bottom: 10px;
+  color: #df4a38;
+
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.submit-comment {
+  padding: 10px 20px;
+  background: url('/img/bg.png') no-repeat center/cover;
+
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-comment:hover {
+  background-color: #218838;
+}
+.comment-list-name {
+  display: flex;
+  align-items: center;
+  color: #df4a38;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.comment-list-name p {
+  padding-left: 0.5em;
+}
+.comment-list-text {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.comment-list-text p {
+  width: 89%;
+  color: #555;
+  font-size: 0.9rem;
+}
+.load-more {
+    background: url('/img/bg.png') no-repeat center/cover;
+;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin: 0 auto;
+  margin-top: 0.5em;
+}
+.comment-item {
+  margin-bottom: 0.5em;
+}
+@media (max-width: 763px) {
+  .comment-section {
+    flex-direction: column;
+  }
+  .comment-form-container,
+  .comments-list-container {
+    width: 95%;
+  }
+  .comments-list-container {
+    margin-top: 2em;
+  }
+}

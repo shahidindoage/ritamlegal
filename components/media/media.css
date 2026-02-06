@@ -1,0 +1,69 @@
+.media-header-section div {
+  border-bottom: 3px solid #df4a38;
+  width: 5%;
+  margin: 0.5em auto;
+}
+
+.media-header-title {
+  font-size: 2rem;
+  color: #333;
+  font-family: "Cardo", serif;
+  font-weight: 500;
+  text-align: center;
+}
+.media-header-section {
+  width: 100%;
+  padding: 2em;
+}
+.media{
+  padding: 1em;
+}
+.video-player {
+  width: 100%; /* Ensures responsiveness */
+  max-width: 300px; /* Limits width */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Ensures proper centering */
+  margin: 0 auto; /* Centers the video */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  position: relative;
+}
+.media-caption{
+  width: 100%;
+  padding: .5em 1em;
+  background-color: rgba(51, 51, 51,0.5);
+  font-size: .9rem;
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+.gallery-item{
+  position: relative;
+}
+.video-caption{
+  width: 300px;
+  padding: .5em 1em;
+  background-color: rgba(51, 51, 51,0.5);
+  font-size: .9rem;
+  color: white;
+  margin: 0 auto;
+}
+@media (max-width:700px) {
+  .media-header-section{
+    padding-top: 0;
+  }
+.media-header-section div {
+ width: 20%; 
+}
+.media{
+  padding: 1em;
+}
+.video-player{
+  height: auto;
+  margin: 0 auto;
+
+}
+.media-caption,.video-caption{
+  font-size: .7rem;
+  text-align: justify;
+}
+}

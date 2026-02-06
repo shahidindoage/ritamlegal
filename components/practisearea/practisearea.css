@@ -1,0 +1,87 @@
+.practisearea-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.practisearea-page-container .header-section div {
+  border-bottom: 3px solid #df4a38;
+  width: 30%;
+  margin: 0.5em auto;
+}
+
+.practisearea-page-container .header-title {
+  font-size: 2rem;
+  color: #333;
+  font-family: "Cardo", serif;
+  font-weight: 500;
+}
+.practisearea-page-container .practisearea-content {
+  width: 95%;
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+}
+
+.practisearea-page-container .left-column {
+  width: 55%;
+  color: #333;
+  padding: 0 2em;
+}
+
+.practisearea-page-container .left-column p {
+  font-family: "Cardo", serif;
+  font-size: 1rem;
+  margin-bottom: 1em;
+  line-height: 2rem;
+}
+
+.practisearea-page-container .left-column h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  font-family: "Cardo", serif;
+}
+.practisearea-page-container .left-column ul {
+  padding-left: 1em;
+}
+.practisearea-page-container .left-column ul li {
+  font-family: "Cardo", serif;
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+  list-style: disc;
+}
+.practisearea-page-container .right-column {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.practisearea-page-container .practisearea-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 763px) {
+  .practisearea-page-container .header-title {
+    text-align: center;
+  }
+  .practisearea-page-container .practisearea-content {
+    flex-direction: column-reverse;
+  }
+  .practisearea-page-container .left-column,
+  .practisearea-page-container .right-column {
+    width: 100%;
+  }
+  .practisearea-page-container .right-column {
+    margin-bottom: 1.5em;
+  }
+  .practisearea-page-container .left-column {
+    padding: 0;
+  }
+}

@@ -1,0 +1,21 @@
+.admin_header{
+  background: url('/img/bg.png') no-repeat center/cover;
+    width: 100%;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: end;
+}
+.admin_header ul{
+    display: flex;
+}
+.admin_header ul li{
+    color: white;
+}
+.admin_header ul li a{
+    padding: 0 .75em;
+}
+@media (max-width:720px){
+    .admin_header{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,136 @@
+/* General styles */
+.header {
+  position: fixed;
+  background-color: #fff;
+  padding: 10px 20px 0 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  font-family: "Cardo", serif;
+  z-index: 100;
+}
+
+.header .head-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header .logo img {
+  max-height: 80px;
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header .nav a,
+.header .dropdown-title {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+}
+.header .nav a:hover,
+.header .dropdown-title:hover {
+  color: #df4a38;
+}
+.header .nav a.active {
+  font-weight: bold;
+  color: #df4a38;
+}
+.dropdown-active {
+  font-weight: bold;
+  color: #df4a38 !important;
+}
+/* Dropdown styles */
+.header .dropdown {
+  position: relative;
+}
+
+.header .dropdown-title {
+  cursor: pointer;
+  display: inline-block; /* Visible on desktop */
+}
+
+.header .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.header .dropdown-menu a {
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header .dropdown-menu a:hover {
+  background: #f0f0f0;
+}
+
+/* Show dropdown menu on hover (desktop only) */
+.header .dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Hamburger Menu */
+.header .hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header .nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  .header .nav.open {
+    display: flex;
+    width: 100%;
+    right: 0;
+    top: 100%;
+    z-index: 100;
+  }
+
+  .header .dropdown-title {
+    display: none; /* Key Personnel title hidden on mobile */
+  }
+
+  .header .dropdown-menu {
+    display: flex; /* Always display dropdown items on mobile */
+    position: relative; /* Inline with mobile menu */
+    box-shadow: none;
+    border: none;
+    align-items: center;
+  }
+
+  .header .hamburger {
+    display: block;
+    color: #df4a38;
+    font-size: 2rem;
+  }
+}
